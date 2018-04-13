@@ -1,0 +1,32 @@
+#largeImage {
+    width: 100vw;
+    height: 400px;
+}
+body {
+    background-color: #087f38;
+}
+.menu {
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+    font-family: sans-serif;
+    z-index: 2;
+}
+.menuBar {
+    background-color: #01471d;  
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuBackground {
+    background-color: #0b3818;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    display: inline;
+    z-index: 1;
+    left: 93px;
+}
