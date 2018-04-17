@@ -4,6 +4,8 @@
 }
 body {
     background-color: #087f38;
+    color: white;
+    margin: 0;
 }
 .menu {
     display: inline-block;
@@ -11,7 +13,7 @@ body {
     font-size: 30px;
     margin: 10px;
     font-family: sans-serif;
-    z-index: 2;
+    z-index: 5;
 }
 .menuBar {
     background-color: #01471d;  
@@ -25,8 +27,19 @@ body {
     background-color: #0b3818;
     width: 100px;
     height: 50px;
-    position: relative;
-    display: inline;
+    position: absolute;
     z-index: 1;
-    left: 93px;
+    left: 28.75vw;
+    
+}
+.subPage {
+    margin-left: 25vw;
+    display: none;
+}
+#underline {
+    background-color: white;
+    width: inherit;
+    height: 2px;
+    position: absolute;
+    bottom: 2px;
 }

@@ -1,16 +1,15 @@
 var mb = document.getElementsByClassName("menuBackground");
+var i = 0;
 function menuClicked(index) {
-    //alert("clicked");
-    
+    i = index;  
 }
-var s = 100;
-var a = 200;
-var p = 300;
-var c = 440;
+var offsets = [28.75, 36.5, 51.75, 61.75];
+
+
 $(".menu").click(function() {
     var a = $(this);
     $(".menuBackground").animate( {
-        left: a.offset(),
-        width: '120px'
+        left: offsets[i] + 'vw',
+        width: a.width()+20
     });
 });
