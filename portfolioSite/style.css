@@ -22,8 +22,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
-.menuBackground {
+#menuBackground {
     background-color: #0b3818;
     width: 100px;
     height: 50px;

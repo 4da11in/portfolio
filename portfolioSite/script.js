@@ -1,15 +1,25 @@
 var mb = document.getElementsByClassName("menuBackground");
 var i = 0;
 function menuClicked(index) {
-    i = index;  
+    i = index;
+    switch (index) {
+        case 0:
+            break;
+                 }
 }
-var offsets = [28.75, 36.5, 51.75, 61.75];
-
+var offsets = [-275, -175, 20, 153];
+function onresize() {    
+    var screenWidth = document.documentElement.clientWidth;    
+    document.getElementById('menuBackground').style.color = "red";//screenWidth/2 + offsets[i] + "px";
+    alert("left");
+}
 
 $(".menu").click(function() {
     var a = $(this);
+    var screenWidth = document.documentElement.clientWidth;
     $(".menuBackground").animate( {
-        left: offsets[i] + 'vw',
+        left: screenWidth/2 + offsets[i] + "px",
         width: a.width()+20
     });
+    
 });

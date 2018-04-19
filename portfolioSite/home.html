@@ -8,10 +8,10 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body onresize="onresize()">
     <img id="largeImage" src="../../deku_shrub.png">
     <div class="menuBar">
-        <div class="menuBackground"><div id="underline"></div></div>
+        <div id="menuBackground"><div id="underline"></div></div>
         <div class="menu" onclick="menuClicked(0)">Home</div>
         <div class="menu" onclick="menuClicked(1)">Skills/Awards</div>
         <div class="menu" onclick="menuClicked(2)">Portfolio</div>
