@@ -11,9 +11,10 @@ body {
     display: inline-block;
     color: white;
     font-size: 30px;
-    margin: 10px;
+    margin: 0px;
     font-family: sans-serif;
     z-index: 5;
+    padding: 10px;
 }
 .menuBar {
     background-color: #01471d;  
@@ -30,7 +31,7 @@ body {
     height: 50px;
     position: absolute;
     z-index: 1;
-    left: 28.75vw;
+    left: calc(50% - 275px);
     
 }
 .subPage {
@@ -43,4 +44,9 @@ body {
     height: 2px;
     position: absolute;
     bottom: 2px;
+}
+@media (max-width: 900px) {
+    .menu {
+        font-size: 18px;
+    }
 }
