@@ -14,8 +14,8 @@ function menuClicked(index) {
 
 function onresize() {    
     var screenWidth = document.documentElement.clientWidth;    
-    document.getElementById('menuBackground').style.left = screenWidth/2 + offsets[i] + "px";
-    
+    document.getElementById('menuBackground').style.left = menus[i].offsetLeft + 'px';
+    document.getElementById('menuBackground').style.width = menus[i].width + 20 + 'px';
 }
 
 $(".menu").click(function() {
@@ -23,9 +23,8 @@ $(".menu").click(function() {
     var screenWidth = document.documentElement.clientWidth;
     
     $("#menuBackground").animate( {
-        left: menus[i].offsetLeft,//screenWidth/2 + offsets[i] + "px",
+        left: menus[i].offsetLeft,
         width: a.width()+20
     }, 300);
     
 });
-
