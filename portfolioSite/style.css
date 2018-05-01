@@ -6,15 +6,29 @@
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    position: absolute;
+    z-index: -5;
+    /*position: absolute;
+    offsets: top, right, bottom, left
+    clip: rect(100px,1000px,500px,0px);*/
+}
+#background {
+    background-color: #087f38;
+    height: 60.3vh;
 }
 #viewport {
-    display: none;
+    display: block;
+    width: 100vw;
+    height: 30vh;
 }
 
 body {
     background-color: #087f38;
     color: white;
     margin: 0;
+}
+p {
+    margin-left: 20vw;
 }
 .menu {
     display: inline-block;
@@ -44,9 +58,8 @@ body {
     z-index: 1;
     left: calc(50% - 275px);    
 }
-.subPage {
-    margin-left: 25vw;
-    display: none;
+.subPage {    
+    display: none;    
 }
 #underline {
     background-color: white;
@@ -55,8 +68,40 @@ body {
     position: absolute;
     bottom: 2px;
 }
+.pi {
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: -1;
+}
+.pb {
+    display: block;
+    width: auto;
+    background-color: red;
+    height: 500px;
+    position: relative;
+    top: 0px;
+}
+.tborder {
+    background-color: #444444;
+    width: 100vw;
+    height: 100px;
+    position: relative;
+    bottom: 0px;
+}
+.bborder {
+    background-color: #444444;
+    width: 100vw;
+    height: 100px;
+}
 @media (max-width: 900px) {
     .menu {
         font-size: 18px;
+    }
+    p {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 15px;
     }
 }
