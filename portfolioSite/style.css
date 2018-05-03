@@ -16,6 +16,7 @@
     background-color: #087f38;
     height: 60.3vh;
 }
+
 #viewport {
     display: block;
     width: 100vw;
@@ -27,8 +28,18 @@ body {
     color: white;
     margin: 0;
 }
+h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+    font-size: 50px;
+    text-align: center;
+}
 p {
-    margin-left: 20vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 0px;
+    background-color: #087f38;
+    font-size: 20px;
 }
 .menu {
     display: inline-block;
@@ -42,13 +53,15 @@ p {
 .menuBar {
     background-color: #01471d;  
     height: 55px;
-    height: 55px;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    margin-bottom: 0px;
 }
 #menuBackground {
     background-color: #0b3818;
@@ -59,7 +72,10 @@ p {
     left: calc(50% - 275px);    
 }
 .subPage {    
-    display: none;    
+    display: none;
+    background-color: #087f38;
+    margin: 0px;
+    z-index: 1;
 }
 #underline {
     background-color: white;
@@ -71,29 +87,41 @@ p {
 .pi {
     display: block;
     margin: auto;
-    position: relative;
     z-index: -1;
+    max-width: 2000px;
+    max-height: 500px;
 }
 .pb {
     display: block;
     width: auto;
-    background-color: red;
-    height: 500px;
+    background-color: #444444;
+    
     position: relative;
     top: 0px;
 }
 .tborder {
-    background-color: #444444;
+    background-color: #000000;
     width: 100vw;
     height: 100px;
     position: relative;
     bottom: 0px;
 }
 .bborder {
-    background-color: #444444;
+    background-color: #000000;
     width: 100vw;
     height: 100px;
 }
+
+.listLabel {
+    text-align: center;
+    font-size: 30px;
+    padding: 30px 0px;
+    margin: 0px;
+}
+li {
+    margin-left: calc(50vw - 100px);
+}
+
 @media (max-width: 900px) {
     .menu {
         font-size: 18px;
