@@ -1,3 +1,6 @@
+* {
+    font-family: serif;
+}
 #largeImage {
     display: block;
     max-width: 2000px;
@@ -52,7 +55,8 @@ p {
 }
 .menuBar {
     background-color: #01471d;  
-    height: 55px;
+    height: 60px;
+    padding-top: 5px;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -114,14 +118,38 @@ p {
 
 .listLabel {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     padding: 30px 0px;
     margin: 0px;
+}
+ul {
+    margin: 0px;
+    font-size: 20px;
 }
 li {
     margin-left: calc(50vw - 100px);
 }
-
+.description {
+    background-color: #444444;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+input {
+    width: 50vw;
+}
+button {
+    font-size: 30px;
+    background: #44ff44;
+    color: white;
+    border: 0;
+}
 @media (max-width: 900px) {
     .menu {
         font-size: 18px;
