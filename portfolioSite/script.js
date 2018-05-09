@@ -11,11 +11,13 @@ function menuClicked(index) {
     //alert(menus[i].offsetLeft);
 }
 //var offsets = [-275, -175, 20, 153];
-
+document.getElementById('menuBackground').style.left = menus[i].offsetLeft + 'px';
+document.getElementById('menuBackground').style.width = $(menus[i]).width() + 20 + 'px';
 function onresize() {    
     var screenWidth = document.documentElement.clientWidth;    
     document.getElementById('menuBackground').style.left = menus[i].offsetLeft + 'px';
-    document.getElementById('menuBackground').style.width = menus[i].width + 20 + 'px';
+    document.getElementById('menuBackground').style.width = $(menus[i]).width() + 20 + 'px';
+    //alert($(menus[i]).width());
 }
 
 $(".menu").click(function() {
