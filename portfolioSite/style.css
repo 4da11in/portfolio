@@ -13,13 +13,11 @@
     max-height: 500px;
     width: auto;
     height: auto;
-    margin-left: calc(50vw - 500px);
+    margin-left: calc(50vw - 25vw);
     margin-right: auto;
     position: absolute;
     z-index: -5;
-    /*position: absolute;
-    offsets: top, right, bottom, left
-    clip: rect(100px,1000px,500px,0px);*/
+    
 }
 #background {
     background-color: #087f38;
@@ -29,7 +27,8 @@
 #viewport {
     display: block;
     width: 100vw;
-    height: 30vh;
+    height: 25vw;
+    min-height: 30vh;
 }
 
 body {
@@ -197,5 +196,9 @@ button {
     }
     .tborder, .bborder {
         height: 50px;
+    }
+    #largeImage {
+        max-width: 400px;
+        margin-left: calc(50vw - 200px);
     }
 }
