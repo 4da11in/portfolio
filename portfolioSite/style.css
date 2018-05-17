@@ -7,6 +7,13 @@ img {
     display: block;
     margin: auto;
 }
+iframe {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    
+}
+
 #filler {
     height: 50vh;
     width: 100vw;
@@ -191,7 +198,7 @@ button {
         width: 130px;
         height: auto;
         float: left;
-        background-color: #087f38;
+        background-color: #087f3800;
     }
     #menuBackground {
         display: none;
@@ -227,5 +234,10 @@ button {
     #largeImage {
         max-width: 100vw;
         margin: auto;
+    }
+    iframe {
+        width: 100vw;
+        height: 100vh;
+        border: none;
     }
 }
